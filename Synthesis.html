@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -42,6 +43,7 @@
             border: 1px solid #cdbd93;
             padding: 20px;
             margin-bottom: 15px;
+            overflow: auto;
         }
 
         .book h2 {
@@ -50,6 +52,16 @@
 
         .book p {
             margin: 8px 0;
+        }
+
+        .book img {
+            width: 130px;
+            height: 190px;
+            object-fit: cover;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            background-color: #e2d5b5;
         }
 
         .available {
@@ -83,28 +95,25 @@
             text-align: center;
         }
 
+        footer a {
+            color: white;
+        }
+
     </style>
 </head>
-
 
 <body>
 
     <header>
-
         <h1>Circulation Desk</h1>
-
         <p>Ashesi Library - Check in, check out, keep track</p>
-
     </header>
-
 
     <main>
 
         <h2>Library Books</h2>
 
-
         <div class="search">
-
             <label for="search">Search for a book:</label>
 
             <input
@@ -114,355 +123,328 @@
             >
 
             <button>Search</button>
-
         </div>
-
 
         <!-- Book 1 -->
 
         <div class="book">
 
-            <h2>The Pragmatic Programmer</h2>
+            <img src="images/1984.jpg" alt="Cover of 1984">
+
+            <h2>1984</h2>
+
+            <p><strong>Author:</strong> George Orwell</p>
+
+            <p><strong>Call Number:</strong> F ORW</p>
 
             <p>
-                <strong>Author:</strong>
-                Hunt & Thomas
+                <strong>Summary:</strong>
+                A dystopian novel exploring total government
+                surveillance, propaganda, and loss of truth.
             </p>
 
-            <p>
-                <strong>Call Number:</strong>
-                005.1 HUN
-            </p>
-
-            <p class="available">
-                Available on shelf
-            </p>
+            <p class="available">Available on shelf</p>
 
             <button>Check Out</button>
 
         </div>
-
 
         <!-- Book 2 -->
 
         <div class="book">
 
-            <h2>Clean Code</h2>
+            <img src="images/to-kill-a-mockingbird.jpg" 
+                alt="Cover of To Kill a Mockingbird">
+
+            <h2>To Kill a Mockingbird</h2>
+
+            <p><strong>Author:</strong> Harper Lee</p>
+
+            <p><strong>Call Number:</strong> F LEE</p>
 
             <p>
-                <strong>Author:</strong>
-                Robert C. Martin
+                <strong>Summary:</strong>
+                A Pulitzer Prize-winning story about racial injustice
+                and moral growth in the American South.
             </p>
 
-            <p>
-                <strong>Call Number:</strong>
-                005.1 MAR
-            </p>
+            <p class="checked">Checked Out</p>
 
-            <p class="checked">
-                Checked Out
-            </p>
+            <p>Due Date: October 15, 2026</p>
 
-            <p>
-                Due Date: October 15, 2026
-            </p>
-
-            <p>
-                Borrower: K. Mensah
-            </p>
+            <p>Borrower: K. Mensah</p>
 
             <button>Check In</button>
 
         </div>
-
 
         <!-- Book 3 -->
 
         <div class="book">
 
-            <h2>Introduction to Algorithms</h2>
+            <img src="images/the-great-gatsby.jpg"
+                alt="Cover of The Great Gatsby">
+
+            <h2>The Great Gatsby</h2>
+
+            <p><strong>Author:</strong> F. Scott Fitzgerald</p>
+
+            <p><strong>Call Number:</strong> F FIT</p>
 
             <p>
-                <strong>Author:</strong>
-                Cormen, Leiserson, Rivest & Stein
+                <strong>Summary:</strong>
+                A critique of the Jazz Age and the decline of the
+                American Dream.
             </p>
 
-            <p>
-                <strong>Call Number:</strong>
-                005.1 COR
-            </p>
+            <p class="checked">Checked Out</p>
 
-            <p class="checked">
-                Checked Out
-            </p>
+            <p>Due Date: September 28, 2026</p>
 
-            <p>
-                Due Date: September 28, 2026
-            </p>
-
-            <p>
-                Borrower: A. Owusu
-            </p>
+            <p>Borrower: A. Owusu</p>
 
             <button>Check In</button>
 
         </div>
-
 
         <!-- Book 4 -->
 
         <div class="book">
 
-            <h2>Database System Concepts</h2>
+            <img src="images/pride-and-prejudice.jpg"
+                alt="Cover of Pride and Prejudice">
+
+            <h2>Pride and Prejudice</h2>
+
+            <p><strong>Author:</strong> Jane Austen</p>
+
+            <p><strong>Call Number:</strong> F AUS</p>
 
             <p>
-                <strong>Author:</strong>
-                Silberschatz, Korth & Sudarshan
+                <strong>Summary:</strong>
+                A sharp 19th-century social comedy about class,
+                marriage, and reputation.
             </p>
 
-            <p>
-                <strong>Call Number:</strong>
-                005.74 SIL
-            </p>
-
-            <p class="available">
-                Available on shelf
-            </p>
+            <p class="available">Available on shelf</p>
 
             <button>Check Out</button>
 
         </div>
-
 
         <!-- Book 5 -->
 
         <div class="book">
 
-            <h2>Design Patterns</h2>
+            <img src="images/things-fall-apart.jpg"
+                alt="Cover of Things Fall Apart">
+
+            <h2>Things Fall Apart</h2>
+
+            <p><strong>Author:</strong> Chinua Achebe</p>
+
+            <p><strong>Call Number:</strong> F ACH</p>
 
             <p>
-                <strong>Author:</strong>
-                Gamma, Helm, Johnson & Vlissides
+                <strong>Summary:</strong>
+                A landmark historical novel depicting traditional
+                Igbo culture and the impact of British colonialism
+                in Nigeria.
             </p>
 
-            <p>
-                <strong>Call Number:</strong>
-                005.1 GAM
-            </p>
-
-            <p class="missing">
-                Missing
-            </p>
+            <p class="missing">Missing</p>
 
             <button>Mark as Found</button>
 
         </div>
-
 
         <!-- Book 6 -->
 
         <div class="book">
 
-            <h2>The C Programming Language</h2>
+            <img src="images/one-hundred-years-of-solitude.jpg"
+                alt="Cover of One Hundred Years of Solitude">
+
+            <h2>One Hundred Years of Solitude</h2>
+
+            <p><strong>Author:</strong> Gabriel García Márquez</p>
+
+            <p><strong>Call Number:</strong> F MAR</p>
 
             <p>
-                <strong>Author:</strong>
-                Kernighan & Ritchie
+                <strong>Summary:</strong>
+                A cornerstone of magical realism following the
+                Buendía family across generations in the fictional
+                town of Macondo.
             </p>
 
-            <p>
-                <strong>Call Number:</strong>
-                005.13 KER
-            </p>
+            <p class="checked">Checked Out</p>
 
-            <p class="checked">
-                Checked Out
-            </p>
+            <p>Due Date: October 20, 2026</p>
 
-            <p>
-                Due Date: October 20, 2026
-            </p>
-
-            <p>
-                Borrower: J. Boateng
-            </p>
+            <p>Borrower: J. Boateng</p>
 
             <button>Check In</button>
 
         </div>
-
 
         <!-- Book 7 -->
 
         <div class="book">
 
-            <h2>Computer Networks</h2>
+            <img src="images/beloved.jpg" alt="Cover of Beloved">
+
+            <h2>Beloved</h2>
+
+            <p><strong>Author:</strong> Toni Morrison</p>
+
+            <p><strong>Call Number:</strong> F MOR</p>
 
             <p>
-                <strong>Author:</strong>
-                Andrew S. Tanenbaum
+                <strong>Summary:</strong>
+                A powerful, haunting exploration of the deep
+                psychological trauma and legacy of American slavery.
             </p>
 
-            <p>
-                <strong>Call Number:</strong>
-                004.6 TAN
-            </p>
-
-            <p class="available">
-                Available on shelf
-            </p>
+            <p class="available">Available on shelf</p>
 
             <button>Check Out</button>
 
         </div>
-
 
         <!-- Book 8 -->
 
         <div class="book">
 
-            <h2>
-                Artificial Intelligence: A Modern Approach
-            </h2>
+            <img src="images/jane-eyre.jpg"
+                alt="Cover of Jane Eyre">
+
+            <h2>Jane Eyre</h2>
+
+            <p><strong>Author:</strong> Charlotte Brontë</p>
+
+            <p><strong>Call Number:</strong> F BRO</p>
 
             <p>
-                <strong>Author:</strong>
-                Russell & Norvig
+                <strong>Summary:</strong>
+                A Gothic-Victorian classic focusing on female
+                independence, morality, and resilience.
             </p>
 
-            <p>
-                <strong>Call Number:</strong>
-                006.3 RUS
-            </p>
+            <p class="checked">Checked Out</p>
 
-            <p class="checked">
-                Checked Out
-            </p>
+            <p>Due Date: October 1, 2026</p>
 
-            <p>
-                Due Date: October 1, 2026
-            </p>
-
-            <p>
-                Borrower: E. Darko
-            </p>
+            <p>Borrower: E. Darko</p>
 
             <button>Check In</button>
 
         </div>
-
 
         <!-- Book 9 -->
 
         <div class="book">
 
-            <h2>Operating System Concepts</h2>
+            <img src="images/crime-and-punishement.jpg"
+                alt="Cover of Crime and Punishment">
+
+            <h2>Crime and Punishment</h2>
+
+            <p><strong>Author:</strong> Fyodor Dostoevsky</p>
+
+            <p><strong>Call Number:</strong> F DOS</p>
 
             <p>
-                <strong>Author:</strong>
-                Silberschatz, Galvin & Gagne
+                <strong>Summary:</strong>
+                A psychological drama examining guilt, morality,
+                and redemption in 19th-century St. Petersburg.
             </p>
 
-            <p>
-                <strong>Call Number:</strong>
-                005.43 SIL
-            </p>
-
-            <p class="available">
-                Available on shelf
-            </p>
+            <p class="available">Available on shelf</p>
 
             <button>Check Out</button>
 
         </div>
 
-
         <!-- Book 10 -->
 
         <div class="book">
 
-            <h2>
-                HTML and CSS: Design and Build Websites
-            </h2>
+            <img src="images/frankenstein.jpg"
+                alt="Cover of Frankenstein">
+
+            <h2>Frankenstein</h2>
+
+            <p><strong>Author:</strong> Mary Shelley</p>
+
+            <p><strong>Call Number:</strong> F SHE</p>
 
             <p>
-                <strong>Author:</strong>
-                Jon Duckett
+                <strong>Summary:</strong>
+                A foundational early science fiction work about
+                scientific hubris and the nature of humanity.
             </p>
 
-            <p>
-                <strong>Call Number:</strong>
-                006.74 DUC
-            </p>
+            <p class="checked">Checked Out</p>
 
-            <p class="checked">
-                Checked Out
-            </p>
+            <p>Due Date: October 18, 2026</p>
 
-            <p>
-                Due Date: October 18, 2026
-            </p>
-
-            <p>
-                Borrower: Esbert
-            </p>
+            <p>Borrower: Esbert</p>
 
             <button>Check In</button>
 
         </div>
 
-
         <!-- Book 11 -->
 
         <div class="book">
 
-            <h2>Eloquent JavaScript</h2>
+            <img src="images/the-hobbit.jpg"
+                alt="Cover of The Hobbit">
+
+            <h2>The Hobbit</h2>
+
+            <p><strong>Author:</strong> J.R.R. Tolkien</p>
+
+            <p><strong>Call Number:</strong> F TOL</p>
 
             <p>
-                <strong>Author:</strong>
-                Marijn Haverbeke
+                <strong>Summary:</strong>
+                An epic high-fantasy masterwork set in Middle-earth.
             </p>
 
-            <p>
-                <strong>Call Number:</strong>
-                005.13 HAV
-            </p>
-
-            <p class="missing">
-                Missing
-            </p>
+            <p class="missing">Missing</p>
 
             <button>Mark as Found</button>
 
         </div>
 
-
         <!-- Book 12 -->
 
         <div class="book">
 
-            <h2>Refactoring</h2>
+            <img src="images/the-catcher-in-the-rye.jpg"
+                alt="Cover of The Catcher in the Rye">
+
+            <h2>The Catcher in the Rye</h2>
+
+            <p><strong>Author:</strong> J.D. Salinger</p>
+
+            <p><strong>Call Number:</strong> F SAL</p>
 
             <p>
-                <strong>Author:</strong>
-                Martin Fowler
+                <strong>Summary:</strong>
+                A classic coming-of-age story following teenage
+                alienation and angst in New York City.
             </p>
 
-            <p>
-                <strong>Call Number:</strong>
-                005.1 FOW
-            </p>
-
-            <p class="available">
-                Available on shelf
-            </p>
+            <p class="available">Available on shelf</p>
 
             <button>Check Out</button>
 
         </div>
 
     </main>
-
 
     <footer>
 
