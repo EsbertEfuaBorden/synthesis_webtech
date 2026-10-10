@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ashesi Library</title>
+
+    <style>
+
+        body {
+            background-color: #efe6cc;
+            color: #2b2316;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #1f2a3c;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .search {
+            margin-bottom: 20px;
+        }
+
+        .search input {
+            width: 300px;
+            padding: 10px;
+        }
+
+        .book {
+            background-color: #f8f2df;
+            border: 1px solid #cdbd93;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .book h2 {
+            margin-top: 0;
+        }
+
+        .book p {
+            margin: 8px 0;
+        }
+
+        .available {
+            color: green;
+            font-weight: bold;
+        }
+
+        .checked {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .missing {
+            color: red;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #1f2a3c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #1f2a3c;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+
+        <h1>Circulation Desk</h1>
+
+        <p>Ashesi Library - Check in, check out, keep track</p>
+
+    </header>
+
+
+    <main>
+
+        <h2>Library Books</h2>
+
+
+        <div class="search">
+
+            <label for="search">Search for a book:</label>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Enter book title or author"
+            >
+
+            <button>Search</button>
+
+        </div>
+
+
+        <!-- Book 1 -->
+
+        <div class="book">
+
+            <h2>The Pragmatic Programmer</h2>
+
+            <p>
+                <strong>Author:</strong>
+                Hunt & Thomas
+            </p>
+
+            <p>
+                <strong>Call Number:</strong>
+                005.1 HUN
+            </p>
+
+            <p class="available">
+                Available on shelf
+            </p>
+
+            <button>Check Out</button>
+
+        </div>
+
+
+        <!-- Book 2 -->
+
+        <div class="book">
+
+            <h2>Clean Code</h2>
+
+            <p>
+                <strong>Author:</strong>
+                Robert C. Martin
+            </p>
+
+            <p>
+                <strong>Call Number:</strong>
+                005.1 MAR
+            </p>
+
+            <p class="checked">
+                Checked Out
+            </p>
+
+            <p>
+                Due Date: October 15, 2026
+            </p>
+
+            <p>
+                Borrower: K. Mensah
+            </p>
+
+            <button>Check In</button>
+
+        </div>
+
+
+        <!-- Book 3 -->
+
+        <div class="book">
+
+            <h2>Introduction to Algorithms</h2>
+
+            <p>
+                <strong>Author:</strong>
+                Cormen, Leiserson, Rivest & Stein
+            </p>
+
+            <p>
+                <strong>Call Number:</strong>
+                005.1 COR
+            </p>
+
+            <p class="checked">
+                Checked Out
+            </p>
+
+            <p>
+                Due Date: September 28, 2026
+            </p>
+
+            <p>
+                Borrower: A. Owusu
+            </p>
+
+            <button>Check In</button>
+
+        </div>
+
+
+        <!-- Book 4 -->
+
+        <div class="book">
+
+            <h2>Database System Concepts</h2>
+
+            <p>
+                <strong>Author:</strong>
+                Silberschatz, Korth & Sudarshan
+            </p>
+
+            <p>
+                <strong>Call Number:</strong>
+                005.74 SIL
+            </p>
+
+            <p class="available">
+                Available on shelf
+            </p>
+
+            <button>Check Out</button>
+
+        </div>
+
+
+        <!-- Book 5 -->
+
+        <div class="book">
+
+            <h2>Design Patterns</h2>
+
+            <p>
+                <strong>Author:</strong>
+                Gamma, Helm, Johnson & Vlissides
+            </p>
+
+            <p>
+                <strong>Call Number:</strong>
+                005.1 GAM
+            </p>
+
+            <p class="missing">
+                Missing
+            </p>
+
+            <button>Mark as Found</button>
+
+        </div>
+
+
+        <!-- Book 6 -->
+
+        <div class="book">
+
+            <h2>The C Programming Language</h2>
+
+            <p>
+                <strong>Author:</strong>
+                Kernighan & Ritchie
+            </p>
+
+            <p>
+                <strong>Call Number:</strong>
+                005.13 KER
+            </p>
+
+            <p class="checked">
+                Checked Out
+            </p>
+
+            <p>
+                Due Date: October 20, 2026
+            </p>
+
+            <p>
+                Borrower: J. Boateng
+            </p>
+
+            <button>Check In</button>
+
+        </div>
+
+
+        <!-- Book 7 -->
+
+        <div class="book">
+
+            <h2>Computer Networks</h2>
+
+            <p>
+                <strong>Author:</strong>
+                Andrew S. Tanenbaum
+            </p>
+
+            <p>
+                <strong>Call Number:</strong>
+                004.6 TAN
+            </p>
+
+            <p class="available">
+                Available on shelf
+            </p>
+
+            <button>Check Out</button>
+
+        </div>
+
+
+        <!-- Book 8 -->
+
+        <div class="book">
+
+            <h2>
+                Artificial Intelligence: A Modern Approach
+            </h2>
+
+            <p>
+                <strong>Author:</strong>
+                Russell & Norvig
+            </p>
+
+            <p>
+                <strong>Call Number:</strong>
+                006.3 RUS
+            </p>
+
+            <p class="checked">
+                Checked Out
+            </p>
+
+            <p>
+                Due Date: October 1, 2026
+            </p>
+
+            <p>
+                Borrower: E. Darko
+            </p>
+
+            <button>Check In</button>
+
+        </div>
+
+
+        <!-- Book 9 -->
+
+        <div class="book">
+
+            <h2>Operating System Concepts</h2>
+
+            <p>
+                <strong>Author:</strong>
+                Silberschatz, Galvin & Gagne
+            </p>
+
+            <p>
+                <strong>Call Number:</strong>
+                005.43 SIL
+            </p>
+
+            <p class="available">
+                Available on shelf
+            </p>
+
+            <button>Check Out</button>
+
+        </div>
+
+
+        <!-- Book 10 -->
+
+        <div class="book">
+
+            <h2>
+                HTML and CSS: Design and Build Websites
+            </h2>
+
+            <p>
+                <strong>Author:</strong>
+                Jon Duckett
+            </p>
+
+            <p>
+                <strong>Call Number:</strong>
+                006.74 DUC
+            </p>
+
+            <p class="checked">
+                Checked Out
+            </p>
+
+            <p>
+                Due Date: October 18, 2026
+            </p>
+
+            <p>
+                Borrower: Esbert
+            </p>
+
+            <button>Check In</button>
+
+        </div>
+
+
+        <!-- Book 11 -->
+
+        <div class="book">
+
+            <h2>Eloquent JavaScript</h2>
+
+            <p>
+                <strong>Author:</strong>
+                Marijn Haverbeke
+            </p>
+
+            <p>
+                <strong>Call Number:</strong>
+                005.13 HAV
+            </p>
+
+            <p class="missing">
+                Missing
+            </p>
+
+            <button>Mark as Found</button>
+
+        </div>
+
+
+        <!-- Book 12 -->
+
+        <div class="book">
+
+            <h2>Refactoring</h2>
+
+            <p>
+                <strong>Author:</strong>
+                Martin Fowler
+            </p>
+
+            <p>
+                <strong>Call Number:</strong>
+                005.1 FOW
+            </p>
+
+            <p class="available">
+                Available on shelf
+            </p>
+
+            <button>Check Out</button>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>Ashesi University - Web Technologies</p>
+
+        <p>
+            <a href="mailto:library@ashesi.edu.gh">
+                Email the library
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
